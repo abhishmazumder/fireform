@@ -1,6 +1,7 @@
 import { Link, Route, Routes } from "react-router-dom";
-import SignUp from "../pages/SignUp";
-import Login from "../pages/Login";
+import React, { Suspense } from "react";
+const SignUp = React.lazy(() => import("../pages/SignUp"));
+const Login = React.lazy(() => import("../pages/Login"));
 
 const Auth = () => {
   return (
@@ -9,10 +10,12 @@ const Auth = () => {
         Back to home
       </Link>
       <div className="self-center flex items-center max-w-4xl flex-grow">
-        <Routes>
-          <Route path="signup" element={<SignUp />} />
-          <Route path="login" element={<Login />} />
-        </Routes>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="signup" element={<SignUp />} />
+            <Route path="login" element={<Login />} />
+          </Routes>
+        </Suspense>
       </div>
     </div>
   );
