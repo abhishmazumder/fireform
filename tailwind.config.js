@@ -4,13 +4,14 @@ export default {
   theme: {
     fontFamily: {
       body: ["Poppins", "sans-serif"],
+      code: ["Courier Prime", "monospace"]
     },
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#EB5E28",
-          light: "#F17449",
-          dark: "#de5526",
+          DEFAULT: "#ff0033",
+          light: "#ff5577",
+          dark: "#aa0022",
         },
         secondary: {
           DEFAULT: "#252422",
@@ -20,6 +21,14 @@ export default {
         success: "#82DD55",
         error: "#E23636",
         warning: "#EDB95E",
+        code: {
+          DEFAULT: "#FFFFFF",
+          background: "#292d34",
+          red:"#c16266",
+          green: "#90b061",
+          yellow: "#be8a59",
+
+        }
       },
     },
   },

@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
+import { Link } from "react-router-dom";
+
+import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa";
 import Logo from "../assets/logo-black-text.svg?react";
-import Google from "../assets/google.svg?react";
-import GitHub from "../assets/github-black.svg?react";
 import Person from "../assets/person.svg?react";
 import Mail from "../assets/mail.svg?react";
 import EyeOpen from "../assets/eye-open.svg?react";
 import EyeClose from "../assets/eye-close.svg?react";
-import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -29,11 +30,11 @@ const SignUp = () => {
       <div>
         <div className="flex items-center justify-between space-x-3">
           <button className="flex-grow px-4 py-2 border flex gap-2 rounded border-slate-200 hover:border-primary-light">
-            <Google />
+          <FcGoogle className="size-6" />
             <span className="text-md">Signup with Google</span>
           </button>
           <button className="flex-grow px-4 py-2 border flex gap-2 rounded border-slate-200 hover:border-primary-light">
-            <GitHub />
+          <FaGithub className="size-6" />
             <span className="text-md">Signup with GitHub</span>
           </button>
         </div>

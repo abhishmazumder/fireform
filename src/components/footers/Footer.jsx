@@ -1,9 +1,8 @@
 import { useForm, Controller } from "react-hook-form";
-import LinkedIn from "../../assets/linkedin.svg?react";
-import X from "../../assets/x.svg?react";
-import GitHub from "../../assets/github-white.svg?react";
-import Web from "../../assets/web.svg?react";
 import Logo from "../../assets/logo-white-text.svg?react";
+import { FaGlobeAmericas } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { memo } from "react";
 
@@ -19,7 +18,7 @@ const Footer = memo(() => {
   };
 
   return (
-    <div className="w-full flex flex-col px-6 space-y-6 py-6 text-white bg-black">
+    <div className="w-full flex flex-col px-6 space-y-6 py-6 text-white bg-secondary-dark">
       <div className="w-full flex flex-col  md:flex-row gap-3">
         <div className="w-full md:w-2/5 flex flex-col justify-start gap-4">
           <div>
@@ -94,7 +93,7 @@ const Footer = memo(() => {
                   )}
                 </div>
                 <div className="flex justify-start">
-                  <button className="px-3 py-2 bg-secondary rounded-md text-primary hover:bg-secondary-dark transition-all">
+                  <button className="px-3 py-2 bg-secondary rounded-md text-primary hover:bg-secondary-light transition-all">
                     <p className="text-sm">Submit</p>
                   </button>
                 </div>
@@ -117,16 +116,16 @@ const Footer = memo(() => {
           </div>
           <div className="my-auto flex flex-row justify-end gap-8">
             <a href={"https:/abhishekmazumder.com"} target="_blank">
-              <Web />
+              <FaGlobeAmericas className="text-white size-6" />
             </a>
             <a href={"https://github.com/abhimazumder"} target="_blank">
-              <GitHub />
+              <FaGithub className="text-white size-6" />
             </a>
             <a href={"www.linkedin.com/in/abhish-mazumder"} target="_blank">
-              <LinkedIn />
+              <FaLinkedin className="text-white size-6" />
             </a>
             <a href={"https://twitter.com/abhish_mazumder"} target="_blank">
-              <X />
+              <FaXTwitter className="text-white size-6" />
             </a>
           </div>
           <div className="mt-auto self-start md:self-end">
@@ -139,14 +138,14 @@ const Footer = memo(() => {
       </div>
       <div className="flex flex-col gap-y-6 text-sm font-light">
         <div className="w-full flex flex-row justify-between md:justify-end gap-6">
-          <Link className=" hover:underline transition-all">
-            <p>Source Code</p>
-          </Link>
-          <Link className="hover:underline transition-all">
+          <Link className="hover:underline transition-all cursor-pointer" to={"/legal/license"}>
             <p>License</p>
           </Link>
-          <Link className="hover:underline transition-all">
-            <p>Terms and Conditions</p>
+          <Link className="hover:underline transition-all cursor-pointer" to={"/legal/privacy"}>
+            <p>Privacy</p>
+          </Link>
+          <Link className="hover:underline transition-all cursor-pointer" to={"/legal/tnc"}>
+            <p>T&C</p>
           </Link>
         </div>
         <div className="w-full flex justify-center">
