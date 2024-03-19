@@ -14,7 +14,7 @@ const Header = memo(() => {
   return (
     <nav
       className={
-        "sticky w-full flex items-center justify-between flex-wrap py-3 px-6 bg-secondary-dark"
+        "sticky w-full flex items-center justify-between flex-wrap py-3 px-6 bg-secondary-dark border-b-[1px] border-white"
       }
     >
       <div className="flex items-center flex-shrink-0">
@@ -45,7 +45,7 @@ const Header = memo(() => {
         </Link>
         <div className="w-full md:w-auto flex flex-col md:flex-row gap-x-3 gap-y-3 justify-center items-center">
           <Link to={"/auth/signup"} className="w-full md:w-auto">
-            <button className="w-full md:w-auto px-3 py-2 bg-primary rounded-md text-white hover:bg-primary-light transition-all">
+            <button className="w-full md:w-auto px-3 py-2 bg-primary rounded-md text-white hover:bg-primary-dark transition-all">
               <p className="text-sm">SignUp</p>
             </button>
           </Link>

@@ -18,7 +18,7 @@ const Footer = memo(() => {
   };
 
   return (
-    <div className="w-full flex flex-col px-6 space-y-6 py-6 text-white bg-secondary-dark">
+    <div className="w-full flex flex-col px-6 space-y-6 py-6 text-white bg-secondary-dark  border-t-[1px]">
       <div className="w-full flex flex-col  md:flex-row gap-3">
         <div className="w-full md:w-2/5 flex flex-col justify-start gap-4">
           <div>

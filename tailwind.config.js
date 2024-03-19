@@ -9,25 +9,28 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#ff0033",
-          light: "#ff5577",
-          dark: "#aa0022",
+          DEFAULT: "#7c3aed",
+          light: "#8b5cf6",
+          dark: "#6639b6",
         },
         secondary: {
-          DEFAULT: "#252422",
-          light: "#464441",
-          dark: "#1A1817",
+          DEFAULT: "#191919",
+          light: "#333333",
+          dark: "#000000",
+        },
+        tertiary: {
+          DEFAULT: "#C026D3",
+          light: "#a264ff",
+          dark: "#6e2bd6",
         },
         success: "#82DD55",
         error: "#E23636",
         warning: "#EDB95E",
         code: {
           DEFAULT: "#FFFFFF",
-          background: "#292d34",
-          red:"#c16266",
-          green: "#90b061",
-          yellow: "#be8a59",
-
+          red: "#C16266",
+          green: "#90B061",
+          yellow: "#BE8A59",
         }
       },
     },
