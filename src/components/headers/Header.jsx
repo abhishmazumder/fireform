@@ -37,11 +37,13 @@ const Header = memo(() => {
           isOpen ? "flex" : "hidden"
         } md:flex flex-col md:flex-row w-full md:w-auto h-auto md:h-auto gap-y-6 md:gap-y-0 gap-x-0 md:gap-x-12 pt-6 md:pt-0 items-center`}
       >
-        <Link to={"/docs"} className="text-white hover:underline">
+        <Link to={"/docs"} className="group text-white">
           <p>Docs</p>
+          <div className="bg-primary-light h-[2px] w-0 group-hover:w-full transition-all duration-150"></div>
         </Link>
-        <Link to={"/help"} className="text-white hover:underline">
+        <Link to={"/help"} className="group text-white">
           <p>Help</p>
+          <div className="bg-primary-light h-[2px] w-0 group-hover:w-full transition-all duration-150"></div>
         </Link>
         <div className="w-full md:w-auto flex flex-col md:flex-row gap-x-3 gap-y-3 justify-center items-center">
           <Link to={"/auth/signup"} className="w-full md:w-auto">

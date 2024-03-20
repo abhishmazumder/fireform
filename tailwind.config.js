@@ -21,7 +21,7 @@ export default {
         tertiary: {
           DEFAULT: "#C026D3",
           light: "#a264ff",
-          dark: "#6e2bd6",
+          dark: "#9526a3",
         },
         success: "#82DD55",
         error: "#E23636",
@@ -32,6 +32,16 @@ export default {
           green: "#90B061",
           yellow: "#BE8A59",
         }
+      },
+      transitionProperty: {
+        'height': 'height'
+      },
+      backgroundSize: {
+        'size-200': '200% 200%',
+      },
+      backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-100': '100% 100%',
       },
     },
   },

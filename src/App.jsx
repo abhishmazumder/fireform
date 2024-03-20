@@ -3,9 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import LazyLoader from "./components/others/LazyLoader";
 
-const Main = lazy(() => import("./layouts/Main"));
-const Auth = lazy(() => import("./layouts/Auth"));
-const User = lazy(() => import("./layouts/User"));
+const Main = lazy(() => import("./routes/Main"));
+const Auth = lazy(() => import("./routes/Auth"));
+const User = lazy(() => import("./routes/User"));
 
 function App() {
   return (
