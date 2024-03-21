@@ -1,4 +1,6 @@
-const Snippet = () => {
+import { memo } from "react";
+
+const Snippet = memo(() => {
   return (
     <div className="relative group w-full md:w-auto">
       <div className="absolute -inset-1 bg-gradient-to-r from-tertiary to-primary rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-500 group-hover:duration-500"></div>
@@ -129,6 +131,8 @@ const Snippet = () => {
     </div>
     
   );
-};
+});
+
+Snippet.displayName = "Snippet";
 
 export default Snippet;

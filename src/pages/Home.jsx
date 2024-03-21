@@ -1,8 +1,10 @@
-import Hero from "../components/Home/Hero";
-import Frameworks from "../components/Home/Frameworks";
-import Features from "../components/Home/Features";
-import Steps from "../components/Home/Steps";
-import Reviews from "../components/Home/Reviews";
+import { lazy } from "react";
+
+import Hero from "../components/Home/Hero/Hero";
+const Frameworks = lazy(() => import("../components/Home/Frameworks/Frameworks"));
+const Features = lazy(() => import("../components/Home/Features/Features"));
+const Steps = lazy(() => import("../components/Home/Steps/Steps"));
+const Reviews = lazy(() => import("../components/Home/Reviews/Reviews"));
 
 const Home = () => {
   return (
@@ -10,8 +12,8 @@ const Home = () => {
       <Hero />
       <Frameworks />
       <Features />
-      <Steps/>
-      <Reviews/>
+      <Steps />
+      <Reviews />
     </div>
   );
 };

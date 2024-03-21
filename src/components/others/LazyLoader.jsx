@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 const LazyLoader = ({
-  delay = 250,
+  delay = 500,
 }) => {
   const [show, setShow] = useState(false);
 
