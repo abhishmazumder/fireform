@@ -11,7 +11,7 @@ const SectionSubHeading = ({ children }) => {
 };
 
 SectionSubHeading.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
 };
 
 export default SectionSubHeading;

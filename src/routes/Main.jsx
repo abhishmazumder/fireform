@@ -13,7 +13,7 @@ const Main = () => {
   return (
     <div className="font-body flex flex-col min-h-screen inset-0 bg-secondary-dark bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] bg-fixed">
       <Header />
-      <div className="flex-grow container mx-auto my-6 h-full w-full">
+      <div className="flex-grow container mx-auto px-4 md:px-8 my-6 h-full w-full">
         <Suspense fallback={<LazyLoader/>}>
           <Routes>
             <Route path="/" element={<Home />} />

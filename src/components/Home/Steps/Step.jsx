@@ -4,7 +4,7 @@ import { memo } from "react";
 const LeftSide = ({ flip = false, icon: Icon, stepNo, title, description }) => {
   return (
     <div
-      className={`w-full md:w-1/2 h-auto flex flex-col justify-center gap-y-3`}
+      className={`w-full md:w-1/2 h-auto flex flex-col gap-y-3`}
     >
       <div
         className={`w-28 h-10 rounded-full p-2 flex justify-center items-center gap-2 self-${flip ? "end" : "start"} bg-gradient-to-r from-tertiary to-primary`}
@@ -17,7 +17,7 @@ const LeftSide = ({ flip = false, icon: Icon, stepNo, title, description }) => {
         >{`Step ${stepNo}`}</p>
       </div>
       <h2
-        className={`font-medium text-2xl  text-${flip ? "end" : "start"} text-white`}
+        className={`font-medium text-2xl text-${flip ? "end" : "start"} text-white`}
       >
         {title}
       </h2>

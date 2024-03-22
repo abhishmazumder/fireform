@@ -11,7 +11,7 @@ const SectionParagraph = ({ children }) => {
 };
 
 SectionParagraph.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
 };
 
 export default SectionParagraph;

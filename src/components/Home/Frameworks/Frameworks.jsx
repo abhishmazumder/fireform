@@ -4,7 +4,6 @@ import { memo } from "react";
 import SectionHeading from "../SectionHeading";
 import SectionParagraph from "../SectionParagraph";
 import SectionSubHeading from "../SectionSubHeading";
-import SectionContentContainer from "../SectionContentContainer";
 
 import {
   SiHtml5,
@@ -29,7 +28,6 @@ const Frameworks = memo(() => {
       <SectionSubHeading>
         Works with all frameworks and platforms
       </SectionSubHeading>
-      <SectionContentContainer>
         <div className="flex flex-wrap justify-around w-full gap-y-3">
           {[
             {
@@ -69,7 +67,6 @@ const Frameworks = memo(() => {
             </button>
           </Link>
         </div>
-      </SectionContentContainer>
     </div>
   );
 });

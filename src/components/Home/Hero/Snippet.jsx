@@ -4,7 +4,7 @@ const Snippet = memo(() => {
   return (
     <div className="relative group w-full md:w-auto">
       <div className="absolute -inset-1 bg-gradient-to-r from-tertiary to-primary rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-500 group-hover:duration-500"></div>
-      <div className="relative w-auto h-auto rounded-2xl overflow-hidden text-md md:text-lf bg-secondary">
+      <div className="relative w-auto h-auto rounded-2xl overflow-x-scroll no-scrollbar text-md md:text-lf bg-secondary">
       <div className=" w-full h-8 px-3 flex gap-x-2 items-center border-neutral-100">
         <span className="h-3 md:h-4 w-3 md:w-4 rounded-full bg-error"></span>
         <span className="h-3 md:h-4 w-3 md:w-4 rounded-full bg-warning"></span>

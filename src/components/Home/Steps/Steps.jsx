@@ -1,10 +1,11 @@
-import { FaUser, FaCopy, FaFileCode } from "react-icons/fa6";
-import { PiConfettiBold } from "react-icons/pi";
-import Step from "./Step";
 import { memo } from "react";
+
+import Step from "./Step";
 import SectionHeading from "../SectionHeading";
 import SectionParagraph from "../SectionParagraph";
-import SectionContentContainer from "../SectionContentContainer";
+
+import { FaUser, FaCopy, FaFileCode } from "react-icons/fa6";
+import { PiConfettiBold } from "react-icons/pi";
 
 const Steps = memo(() => {
   return (
@@ -14,7 +15,6 @@ const Steps = memo(() => {
         Follow these simple steps below to set up your account and start
         collecting form submissions in minutes.
       </SectionParagraph>
-      <SectionContentContainer>
         <div className="flex flex-col gap-y-12 lg:gap-6">
           {[
             {
@@ -58,7 +58,6 @@ const Steps = memo(() => {
             />
           ))}
         </div>
-      </SectionContentContainer>
     </div>
   );
 });

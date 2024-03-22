@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { memo } from "react";
+import ButtonPrimary from "../others/ButtonPrimary";
 
 const Footer = memo(() => {
   const {
@@ -93,9 +94,9 @@ const Footer = memo(() => {
                   )}
                 </div>
                 <div className="flex justify-start">
-                  <button className="px-3 py-2 bg-secondary rounded-md text-primary hover:bg-secondary-light transition-all">
-                    <p className="text-sm">Submit</p>
-                  </button>
+                  <ButtonPrimary variant="dark" size="sm">
+                    Submit
+                  </ButtonPrimary>
                 </div>
               </div>
             </form>
@@ -138,13 +139,22 @@ const Footer = memo(() => {
       </div>
       <div className="flex flex-col gap-y-6 text-sm font-light">
         <div className="w-full flex flex-row justify-between md:justify-end gap-6">
-          <Link className="hover:underline transition-all cursor-pointer" to={"/legal/license"}>
+          <Link
+            className="hover:underline transition-all cursor-pointer"
+            to={"/legal/license"}
+          >
             <p>License</p>
           </Link>
-          <Link className="hover:underline transition-all cursor-pointer" to={"/legal/privacy"}>
+          <Link
+            className="hover:underline transition-all cursor-pointer"
+            to={"/legal/privacy"}
+          >
             <p>Privacy</p>
           </Link>
-          <Link className="hover:underline transition-all cursor-pointer" to={"/legal/tnc"}>
+          <Link
+            className="hover:underline transition-all cursor-pointer"
+            to={"/legal/tnc"}
+          >
             <p>T&C</p>
           </Link>
         </div>

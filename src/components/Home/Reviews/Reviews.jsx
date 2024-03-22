@@ -1,7 +1,6 @@
 import { memo } from "react";
 import Review from "./Review";
 import SectionHeading from "../SectionHeading";
-import SectionContentContainer from "../SectionContentContainer";
 
 const Reviews = memo(() => {
   return (
@@ -9,7 +8,6 @@ const Reviews = memo(() => {
       <SectionHeading>
         Here&apos;s what our user feel about fireform.
       </SectionHeading>
-      <SectionContentContainer>
       <div className="grid grid-col-1 md:grid-cols-3 gap-10">
         {[
           {
@@ -40,7 +38,6 @@ const Reviews = memo(() => {
           <Review key={index} {...review} />
         ))}
       </div>
-      </SectionContentContainer>
     </div>
   );
 });

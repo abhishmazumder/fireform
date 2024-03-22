@@ -3,6 +3,7 @@ import Logo from "../../assets/logo-white-text.svg?react";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
+import ButtonPrimary from "../others/ButtonPrimary";
 
 const Header = memo(() => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,16 +47,12 @@ const Header = memo(() => {
           <div className="bg-primary-light h-[2px] w-0 group-hover:w-full transition-all duration-150"></div>
         </Link>
         <div className="w-full md:w-auto flex flex-col md:flex-row gap-x-3 gap-y-3 justify-center items-center">
-          <Link to={"/auth/signup"} className="w-full md:w-auto">
-            <button className="w-full md:w-auto px-3 py-2 bg-primary rounded-md text-white hover:bg-primary-dark transition-all">
-              <p className="text-sm">SignUp</p>
-            </button>
-          </Link>
-          <Link to={"/auth/login"} className="w-full md:w-auto">
-            <button className="w-full md:w-auto px-3 py-2 bg-secondary rounded-md text-primary hover:bg-secondary-light transition-all">
-              <p className="text-sm">Login</p>
-            </button>
-          </Link>
+          <ButtonPrimary variant="bright" size="sm" to="/auth/signup">
+            SignUp
+          </ButtonPrimary>
+          <ButtonPrimary variant="dark" size="sm" to="/auth/login">
+            Login
+          </ButtonPrimary>
         </div>
       </div>
     </nav>

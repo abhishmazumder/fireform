@@ -1,7 +1,6 @@
 import { memo } from "react";
 
 import SectionHeading from "../SectionHeading";
-import SectionContentContainer from "../SectionContentContainer";
 import Feature from "./Feature";
 
 import { FaGift, FaShieldHalved, FaCode } from "react-icons/fa6";
@@ -52,13 +51,11 @@ const Features = memo(() => {
       <SectionHeading>
         Secure, easy to use with all essential features!
       </SectionHeading>
-      <SectionContentContainer>
         <div className="flex flex-wrap w-full justify-center gap-3">
           {features.map((feature, index) => (
             <Feature key={index} {...feature} />
           ))}
         </div>
-      </SectionContentContainer>
     </div>
   );
 });
