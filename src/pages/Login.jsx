@@ -1,12 +1,18 @@
 import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
+
 import Logo from "../assets/logo-black-text.svg?react";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import Mail from "../assets/mail.svg?react";
 import EyeOpen from "../assets/eye-open.svg?react";
 import EyeClose from "../assets/eye-close.svg?react";
+
 import { Link } from "react-router-dom";
+import {
+  logInWithEmailAndPassword,
+  signInWithGoogle,
+} from "../firebase/firebase";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -17,7 +23,7 @@ const Login = () => {
   } = useForm();
 
   const submitForm = (data) => {
-    console.log(data);
+    logInWithEmailAndPassword(data.email, data.password);
   };
   return (
     <div className="pt-8 px-4 pb-4">
@@ -26,7 +32,10 @@ const Login = () => {
       </div>
       <div>
         <div className="flex items-center justify-between space-x-3">
-          <button className="flex-grow px-4 py-2 border flex gap-2 rounded border-slate-200  hover:border-primary-light">
+          <button
+            className="flex-grow px-4 py-2 border flex gap-2 rounded border-slate-200  hover:border-primary-light"
+            onClick={signInWithGoogle}
+          >
             <FcGoogle className="size-6" />
             <span>Login with Google</span>
           </button>

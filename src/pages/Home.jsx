@@ -7,7 +7,7 @@ import EndCard from "../components/Home/EndCard/EndCard";
 
 const Home = () => {
   return (
-    <div className="px-6 flex flex-col mt-3 mb-6 gap-y-20 md:gap-y-32">
+    <div className="flex flex-col mx-4 md:mx-12 my-6 gap-y-20 md:gap-y-32">
       <Hero />
       <Frameworks />
       <Features />

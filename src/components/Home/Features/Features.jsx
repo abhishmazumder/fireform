@@ -51,7 +51,7 @@ const Features = memo(() => {
       <SectionHeading>
         Secure, easy to use with all essential features!
       </SectionHeading>
-        <div className="flex flex-wrap w-full justify-center gap-3">
+        <div className="flex flex-wrap w-full justify-center">
           {features.map((feature, index) => (
             <Feature key={index} {...feature} />
           ))}

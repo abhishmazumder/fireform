@@ -153,9 +153,9 @@ const Footer = memo(() => {
           </Link>
           <Link
             className="hover:underline transition-all cursor-pointer"
-            to={"/legal/tnc"}
+            to={"/legal/terms"}
           >
-            <p>T&C</p>
+            <p>Terms</p>
           </Link>
         </div>
         <div className="w-full flex justify-center">

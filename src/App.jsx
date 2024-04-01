@@ -12,7 +12,7 @@ function App() {
     <Suspense fallback={<LazyLoader/>}>
       <Routes>
         <Route path="/auth/*" element={<Auth />} />
-        <Route path="/user" element={<User />} />
+        <Route path="/user/*" element={<User />} />
         <Route path="*" element={<Main />} />
       </Routes>
      </Suspense>

@@ -15,7 +15,7 @@ const Header = memo(() => {
   return (
     <nav
       className={
-        "sticky w-full flex items-center justify-between flex-wrap py-3 px-6 bg-secondary-dark border-b-[1px] border-white"
+        "sticky w-full min-h-15 flex items-center justify-between flex-wrap py-3 px-6 bg-secondary-dark border-b-[1px] border-white"
       }
     >
       <div className="flex items-center flex-shrink-0">

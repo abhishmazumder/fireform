@@ -3,26 +3,28 @@ import { memo } from "react";
 
 const LeftSide = ({ flip = false, icon: Icon, stepNo, title, description }) => {
   return (
-    <div
-      className={`w-full md:w-1/2 h-auto flex flex-col gap-y-3`}
-    >
+    <div className={`w-full md:w-1/2 h-auto flex flex-col gap-y-3`}>
       <div
-        className={`w-28 h-10 rounded-full p-2 flex justify-center items-center gap-2 self-${flip ? "end" : "start"} bg-gradient-to-r from-tertiary to-primary`}
+        className={`w-28 h-10 rounded-full p-2 flex justify-center items-center gap-2 self-${
+          flip ? "end" : "start"
+        } bg-gradient-to-r from-tertiary to-primary`}
       >
         <div className="text-white">
           <Icon className="size-4" />
         </div>
-        <p
-          className="text-white font-medium text-md"
-        >{`Step ${stepNo}`}</p>
+        <p className="text-white font-medium text-md">{`Step ${stepNo}`}</p>
       </div>
       <h2
-        className={`font-medium text-2xl text-${flip ? "end" : "start"} text-white`}
+        className={`font-medium text-2xl text-${
+          flip ? "end" : "start"
+        } text-white`}
       >
         {title}
       </h2>
       <p
-        className={`text-sm font-light text-${flip ? "end" : "start"} text-neutral-300`}
+        className={`text-sm font-light text-${
+          flip ? "end" : "start"
+        } text-neutral-300`}
       >
         {description}
       </p>
@@ -41,7 +43,9 @@ LeftSide.propTypes = {
 const RightSide = ({ flip = false }) => {
   return (
     <div
-      className={`w-full md:w-1/2 flex flex-row justify-center md:justify-${flip ? "start" : "end"}
+      className={`w-full md:w-1/2 flex flex-row justify-center md:justify-${
+        flip ? "start" : "end"
+      }
       }`}
     >
       <img

@@ -9,6 +9,10 @@ import Person from "../assets/person.svg?react";
 import Mail from "../assets/mail.svg?react";
 import EyeOpen from "../assets/eye-open.svg?react";
 import EyeClose from "../assets/eye-close.svg?react";
+import {
+  signInWithGoogle,
+  registerWithEmailAndPassword,
+} from "../firebase/firebase";
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -19,7 +23,7 @@ const SignUp = () => {
   } = useForm();
 
   const submitForm = (data) => {
-    console.log(data);
+    registerWithEmailAndPassword(data?.name, data?.email, data?.password);
   };
 
   return (
@@ -29,12 +33,15 @@ const SignUp = () => {
       </div>
       <div>
         <div className="flex items-center justify-between space-x-3">
-          <button className="flex-grow px-4 py-2 border flex gap-2 rounded border-slate-200 hover:border-primary-light">
-          <FcGoogle className="size-6" />
+          <button
+            className="flex-grow px-4 py-2 border flex gap-2 rounded border-slate-200 hover:border-primary-light"
+            onClick={signInWithGoogle}
+          >
+            <FcGoogle className="size-6" />
             <span className="text-md">Signup with Google</span>
           </button>
           <button className="flex-grow px-4 py-2 border flex gap-2 rounded border-slate-200 hover:border-primary-light">
-          <FaGithub className="size-6" />
+            <FaGithub className="size-6" />
             <span className="text-md">Signup with GitHub</span>
           </button>
         </div>
