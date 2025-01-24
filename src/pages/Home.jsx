@@ -1,9 +1,9 @@
-import Hero from "../components/home/Hero/Hero";
-import Frameworks from "../components/home/Frameworks/Frameworks";
-import Features from "../components/home/Features/Features";
-import Steps from "../components/home/Steps/Steps";
-import Reviews from "../components/home/Reviews/Reviews";
-import EndCard from "../components/home/EndCard/EndCard";
+import EndCard from "../components/home/EndCard";
+import Features from "../components/home/Features";
+import Frameworks from "../components/home/Frameworks";
+import Hero from "../components/home/Hero";
+import Reviews from "../components/home/Reviews";
+import Steps from "../components/home/Steps";
 
 const Home = () => {
   return (
