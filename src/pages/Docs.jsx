@@ -5,7 +5,7 @@ const Docs = () => {
 
       </div>
       <div className="flex-grow h-screen bg-slate-900">
-        
+
       </div>
     </div>
   );

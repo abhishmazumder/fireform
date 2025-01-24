@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { memo } from "react";
 
 import SectionHeading from "../SectionHeading";
 import SectionParagraph from "../SectionParagraph";
@@ -14,7 +13,7 @@ import {
 } from "react-icons/si";
 import { GoArrowRight } from "react-icons/go";
 
-const Frameworks = memo(() => {
+const Frameworks = () => {
   return (
     <div className="flex flex-col gap-y-12 md:gap-y-10 items-center">
       <SectionHeading>
@@ -69,8 +68,6 @@ const Frameworks = memo(() => {
         </div>
     </div>
   );
-});
-
-Frameworks.displayName = "Frameworks";
+};
 
 export default Frameworks;

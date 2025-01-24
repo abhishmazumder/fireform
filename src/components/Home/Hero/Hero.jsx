@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { memo } from "react";
 
 import SectionParagraph from "../SectionParagraph";
 import Snippet from "./Snippet";
@@ -7,7 +6,7 @@ import Snippet from "./Snippet";
 import { GoArrowRight } from "react-icons/go";
 import ButtonPrimary from "../../others/ButtonPrimary";
 
-const Hero = memo(() => {
+const Hero = () => {
   return (
     <div className="flex flex-col gap-y-12 md:gap-y-10 items-center">
       <div className="w-full md:w-5/6">
@@ -44,8 +43,6 @@ const Hero = memo(() => {
       </div>
     </div>
   );
-});
-
-Hero.displayName = "Hero";
+};
 
 export default Hero;

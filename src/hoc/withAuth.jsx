@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "../../firebase/firebase";
+import { auth } from "../firebase/firebase";
 
 const withAuth = (Component) => {
   const AuthenticatedComponent = (props) => {

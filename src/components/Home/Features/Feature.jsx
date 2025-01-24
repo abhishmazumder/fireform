@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
-import { memo } from "react";
 
-const Feature = memo(({ icon: Icon, title, description }) => {
+const Feature = ({ icon: Icon, title, description }) => {
   return (
     <div className="relative  w-full md:w-1/3 min-h-60 p-3">
       <div className="p-3 rounded-2xl h-full w-full flex-grow bg-transparent border-primary-light border-2 flex flex-col gap-3">
@@ -23,9 +22,7 @@ const Feature = memo(({ icon: Icon, title, description }) => {
     </div>
     </div>
   );
-});
-
-Feature.displayName = "Feature";
+};
 
 Feature.propTypes = {
   icon: PropTypes.elementType.isRequired,

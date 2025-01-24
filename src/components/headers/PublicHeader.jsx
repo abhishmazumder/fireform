@@ -1,11 +1,11 @@
-import { memo, useState } from "react";
+import { useState } from "react";
 import Logo from "../../assets/logo-white-text.svg?react";
 import { Link } from "react-router-dom";
-import { FiMenu } from "react-icons/fi";
-import { FiX } from "react-icons/fi";
+import { FiX, FiMenu } from "react-icons/fi";
 import ButtonPrimary from "../others/ButtonPrimary";
+import UnderlineLink from "../others/UnderlineLink";
 
-const Header = memo(() => {
+const PublicHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -34,18 +34,11 @@ const Header = memo(() => {
         )}
       </div>
       <div
-        className={`${
-          isOpen ? "flex" : "hidden"
-        } md:flex flex-col md:flex-row w-full md:w-auto h-auto md:h-auto gap-y-6 md:gap-y-0 gap-x-0 md:gap-x-12 pt-6 md:pt-0 items-center`}
+        className={`${isOpen ? "flex" : "hidden"
+          } md:flex flex-col md:flex-row w-full md:w-auto h-auto md:h-auto gap-y-6 md:gap-y-0 gap-x-0 md:gap-x-12 pt-6 md:pt-0 items-center`}
       >
-        <Link to={"/docs"} className="group text-white">
-          <p>Docs</p>
-          <div className="bg-primary-light h-[2px] w-0 group-hover:w-full transition-all duration-150"></div>
-        </Link>
-        <Link to={"/help"} className="group text-white">
-          <p>Help</p>
-          <div className="bg-primary-light h-[2px] w-0 group-hover:w-full transition-all duration-150"></div>
-        </Link>
+        <UnderlineLink to={"/docs"} text={"Docs"} />
+        <UnderlineLink to={"/help"} text={"Help"} />
         <div className="w-full md:w-auto flex flex-col md:flex-row gap-x-3 gap-y-3 justify-center items-center">
           <ButtonPrimary variant="bright" size="sm" to="/auth/signup">
             SignUp
@@ -57,8 +50,6 @@ const Header = memo(() => {
       </div>
     </nav>
   );
-});
+};
 
-Header.displayName = "Header";
-
-export default Header;
+export default PublicHeader;

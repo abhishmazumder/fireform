@@ -24,7 +24,7 @@ const UserHeader = () => {
           positions={["bottom", "left"]}
           align="center"
           content={
-            <div className="flex flex-col min-w-72 py-6 gap-6 bg-secondary rounded-2xl font-body">
+            <div className="flex flex-col min-w-72 pt-6 pb-3 gap-3 bg-secondary rounded-2xl font-body">
               <div className="px-6">
                 <p className="text-sm font-bold text-neutral-300">
                   {
@@ -32,19 +32,19 @@ const UserHeader = () => {
                   }
                 </p>
               </div>
-              <div className="flex items-center justify-between px-6 py-2 group transition-all cursor-pointer hover:bg-secondary-light">
+              <div className="flex items-center justify-between px-6 py-3 group transition-all cursor-pointer hover:bg-secondary-light">
                 <p className="text-sm font-normal text-neutral-300 group-hover:text-white">
                   Account Settings
                 </p>
                 <RiUserSettingsLine className="size-5 text-neutral-300 group-hover:text-white" />
               </div>
-              <div className="flex items-center justify-between px-6 py-2 group transition-all cursor-pointer hover:bg-secondary-light" onClick={() => navigate("/")}>
+              <div className="flex items-center justify-between px-6 py-3 group transition-all cursor-pointer hover:bg-secondary-light" onClick={() => navigate("/")}>
                 <p className="text-sm font-normal text-neutral-300 group-hover:text-white">  
                   fireform Homepage
                 </p>
                 <RiExternalLinkLine className="size-5 text-neutral-300 group-hover:text-white" />
               </div>
-              <div className="flex items-center justify-between px-6 py-2 group transition-all cursor-pointer hover:bg-secondary-light" onClick={logout}>
+              <div className="flex items-center justify-between px-6 py-3 group transition-all cursor-pointer hover:bg-secondary-light" onClick={logout}>
                 <p className="text-sm font-normal text-neutral-300 group-hover:text-white">
                   Logout
                 </p>

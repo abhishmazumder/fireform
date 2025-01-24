@@ -1,8 +1,7 @@
-import { memo } from "react";
 import Review from "./Review";
 import SectionHeading from "../SectionHeading";
 
-const Reviews = memo(() => {
+const Reviews = () => {
   return (
     <div className="flex flex-col gap-y-12 md:gap-y-10 items-center">
       <SectionHeading>
@@ -40,8 +39,6 @@ const Reviews = memo(() => {
       </div>
     </div>
   );
-});
-
-Reviews.displayName = "Reviews";
+};
 
 export default Reviews;
