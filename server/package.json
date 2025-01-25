@@ -1,11 +1,12 @@
 {
-  "name": "fireform-server",
+  "name": "server",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "nodemon --exec babel-node src/index.js",
+    "build": "echo 'No build process for Express'",
     "start": "node src/index.js",
-    "build": "echo 'No build process for Express'"
+    "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
     "cors": "^2.8.5",

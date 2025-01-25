@@ -7,9 +7,10 @@
     "server"
   ],
   "scripts": {
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --no-cache --parallel --continue",
+    "start": "turbo run start",
     "build": "turbo run build",
-    "start": "turbo run start"
+    "clean": "turbo run clean"
   },
   "devDependencies": {
     "turbo": "^2.3.4"
