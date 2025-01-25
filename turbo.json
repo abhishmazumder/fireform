@@ -1,17 +1,21 @@
 {
-  "$schema": "https://turbo.build/schema.json",
-  "tasks": {
-    "dev": {
-      "cache": false,
-      "persistent": true
-    },
-    "build": {
-      "outputs": [
-        "client/dist/**"
-      ]
-    },
-    "start": {
-      "cache": false
+    "$schema": "https://turbo.build/schema.json",
+    "globalDependencies": ["**/.env*"],
+    "pipeline": {
+      "dev": {
+        "cache": false,
+        "persistent": true,
+        "outputs": []
+      },
+      "build": {
+        "outputs": [
+          "client/dist/**"
+        ]
+      },
+      "start": {
+        "cache": false,
+        "dependsOn": ["^build"],
+        "outputs": []
+      }
     }
-  }
-}
+  }  
