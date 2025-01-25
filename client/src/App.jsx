@@ -18,6 +18,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 
 function App() {
+  console.log("API URL", import.meta.env.VITE_API_URL);
   return (
     <Suspense fallback={<LazyLoader />}>
       <Routes>
