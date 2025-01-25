@@ -5,11 +5,11 @@
 
 # Dependency directories
 node_modules/
-client/node_modules/
-server/node_modules/
+apps/client/node_modules/
+apps/server/node_modules/
 
 # Build output (dist folder)
-client/dist
+apps/client/dist
 
 # Env files
 **/*.env
