@@ -12,12 +12,12 @@
     ],
     "rewrites": [
         {
-            "src": "/api/(.*)",
-            "dest": "/apps/server/src/$1"
+            "source": "/api/(.*)",
+            "destination": "/apps/server/src/$1"
         },
         {
-            "src": "/(.*)",
-            "dest": "/apps/client/$1"
+            "source": "/(.*)",
+            "destination": "/apps/client/$1"
         }
     ],
     "outputDirectory": "apps/client/dist"
