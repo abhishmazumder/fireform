@@ -13,11 +13,11 @@
     "rewrites": [
         {
             "source": "/api/(.*)",
-            "destination": "/apps/server/src/$1"
+            "destination": "/apps/server/src"
         },
         {
             "source": "/(.*)",
-            "destination": "/apps/client/$1"
+            "destination": "/"
         }
     ],
     "outputDirectory": "apps/client/dist"
