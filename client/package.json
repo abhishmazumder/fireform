@@ -7,7 +7,6 @@
     "dev": "vite",
     "build": "vite build",
     "start": "vite preview",
-    "deploy": "vercel deploy dist --team=turborepo --confirm",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
