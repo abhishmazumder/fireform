@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "client",
-    "server"
+    "apps/client",
+    "apps/server"
   ],
   "scripts": {
-    "dev": "turbo run dev --no-cache --parallel --continue",
-    "start": "turbo run start",
+    "dev": "turbo run dev",
     "build": "turbo run build",
+    "start": "turbo run start",
     "clean": "turbo run clean"
   },
   "devDependencies": {

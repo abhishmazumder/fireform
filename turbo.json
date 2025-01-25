@@ -1,15 +1,15 @@
 {
     "$schema": "https://turbo.build/schema.json",
-    "globalDependencies": [
-        "**/.env*"
-    ],
     "tasks": {
+        "dev": {
+            "cache": false
+        },
         "build": {
-            "outputs": [
-                "dist/**"
-            ],
             "dependsOn": [
                 "^build"
+            ],
+            "outputs": [
+                "dist/**"
             ]
         },
         "start": {
@@ -18,9 +18,6 @@
                 "^build"
             ],
             "outputs": []
-        },
-        "dev": {
-            "cache": false
         },
         "clean": {
             "cache": false
