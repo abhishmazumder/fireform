@@ -14,10 +14,6 @@
         {
             "src": "/api/(.*)",
             "dest": "apps/server/src/index.js"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "apps/client/dist/index.html"
         }
     ],
     "outputDirectory": "apps/client/dist"
