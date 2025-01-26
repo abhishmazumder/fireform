@@ -14,10 +14,12 @@
         {
             "src": "/api/(.*)",
             "dest": "/apps/server/src/index.js"
-        },
+        }
+    ],
+    "rewrites": [
         {
-            "src": "/(.*)",
-            "dest": "/apps/client/index.html"
+            "source": "/(.*)",
+            "destination": "/index.html"
         }
     ],
     "outputDirectory": "apps/client/dist"
