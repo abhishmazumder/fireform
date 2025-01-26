@@ -6,7 +6,7 @@
             "use": "@vercel/static-build",
             "config": {
                 "framework": "vite",
-                "distDir": "apps/client/dist"
+                "distDir": "dist"
             }
         },
         {
