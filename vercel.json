@@ -17,7 +17,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "$1"
+            "dest": "/$1"
         }
     ],
     "outputDirectory": "apps/client/dist"
