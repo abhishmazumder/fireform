@@ -5,21 +5,19 @@
             "src": "apps/client/package.json",
             "use": "@vercel/static-build",
             "config": {
-                "distDir": "dist"
+                "framework": "vite",
+                "distDir": "apps/client/dist"
             }
         },
         {
-            "src": "apps/server/src/index.js",
+            "src": "apps/server/api/index.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "apps/server/src/index.js"
-        },
-        {
-            "handle": "filesystem"
+            "dest": "/api"
         },
         {
             "src": "/(.*)",
