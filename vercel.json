@@ -17,7 +17,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "index.html"
+            "dest": "apps/client/index.html"
         }
     ],
     "outputDirectory": "apps/client/dist"
