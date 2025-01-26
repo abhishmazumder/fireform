@@ -30,3 +30,4 @@ apps/client/dist
 
 # TurboRepo cache and build files
 **/.turbo/
+.vercel
