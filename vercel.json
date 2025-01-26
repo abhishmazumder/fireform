@@ -8,10 +8,6 @@
                 "framework": "vite",
                 "distDir": "dist"
             }
-        },
-        {
-            "src": "apps/server/api/index.js",
-            "use": "@vercel/node"
         }
     ],
     "routes": [
