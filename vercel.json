@@ -10,15 +10,5 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [
-        {
-            "src": "/api/(.*)",
-            "dest": "/apps/server/src/index.js"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/apps/client/index.html"
-        }
-    ],
     "outputDirectory": "apps/client/dist"
 }
