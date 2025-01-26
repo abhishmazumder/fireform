@@ -19,7 +19,7 @@
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/index.html"
+            "destination": "/apps/client/index.html"
         }
     ],
     "outputDirectory": "apps/client/dist"
